@@ -11,8 +11,7 @@
 
         <!-- You can turn off the avatar in _config.yml by setting to false -->
         {% if site.resume_avatar == 'true' %}
-        <img src="images/Image 24.jpg" alt="my photo" class="avatar" itemprop="image">
-        {% endif %}
+        <img src="images/Image 24.jpg" alt="my photo" class="avatar" itemprop="image"> {% endif %}
 
         <!-- Your name is defined in the _config.yml file -->
         <h1 class="header-name" itemprop="name">{{ site.resume_name }}</h1>
@@ -27,15 +26,13 @@
         </div>
 
         <div class="executive-summary" itemprop="description">
-          <p>I like to build things. I am a self-taught developer and Computer Science student at the University of Pittsburgh. I taught myself HTML, CSS, some JavaScript, but I also know a little Python, Java, and Ruby. I am currently enrolled at Free Code Camp and Treehouse focusing on full-stack web development. References available upon request.</p>
+          <p>I like to build things. I am a self-taught developer and Computer Science student at the University of Pittsburgh. I taught myself HTML, CSS, some JavaScript, but I also know a little Python, Java, and Ruby. I am currently enrolled at Free Code
+            Camp and Treehouse focusing on full-stack web development. References available upon request.</p>
         </div>
 
         {% if site.resume_looking_for_work == 'yes' %}
-        <a href="mailto:{{ site.resume_contact_email }}" class="contact-button" itemprop="email">Contact me</a>
-        {% elsif site.resume_looking_for_work == 'no' %}
-        <a class="contact-button not-looking">I'm not looking for work right now.</a>
-        {% else %}
-        {% endif %}
+        <a href="mailto:{{ site.resume_contact_email }}" class="contact-button" itemprop="email">Contact me</a> {% elsif site.resume_looking_for_work == 'no' %}
+        <a class="contact-button not-looking">I'm not looking for work right now.</a> {% else %} {% endif %}
 
       </header>
 
@@ -53,18 +50,21 @@
           <h4 class="resume-item-details" itemprop="description">Courier &bull; Jan 2010 &mdash; Apr 2010</h4>
           <p class="resume-item-copy">Community College work-study</p>
           <ul class="resume-item-list">
-            <li>Filing papers on professors and grading materials, and assisted head secretaries with   various tasks such as photocopying and faxing documents</li>
+            <li>Filing papers on professors and grading materials, and assisted head secretaries with various tasks such as photocopying and faxing documents</li>
             <li>Responsible for transporting important files between campus buildings</li>
             <li>Work-study position</li>
           </ul>
-        </div><!-- end of resume-item -->
+        </div>
+        <!-- end of resume-item -->
 
         <!-- another resume item -->
         <div class="resume-item" itemscope itemprop="worksFor" itemtype="https://schema.org/Organization">
           <h3 class="resume-item-title" itemprop="name">The Wildwood Journal</h3>
           <h4 class="resume-item-details" itemprop="description">Head Editor &bull; August 2009 &mdash; Dec. 2010</h4>
-          <p class="resume-item-copy">Assembled a panel of editors to review submissions to the Wildwood Journal. Reviewed submissions sent in by students and oversaw editors selections for the journal. Made final decision on acceptance of piece into the journal while also making the budget for cover, layout, and distribution. Submitted budget to Student Government for approval. Unpaid position</p>
-        </div><!-- end of resume-item -->
+          <p class="resume-item-copy">Assembled a panel of editors to review submissions to the Wildwood Journal. Reviewed submissions sent in by students and oversaw editors selections for the journal. Made final decision on acceptance of piece into the journal while also making
+            the budget for cover, layout, and distribution. Submitted budget to Student Government for approval. Unpaid position</p>
+        </div>
+        <!-- end of resume-item -->
 
         <!-- by now you're getting the picture... -->
         <div class="resume-item" itemscope itemprop="worksFor" itemtype="https://schema.org/Organization">
@@ -72,13 +72,12 @@
           <h4 class="resume-item-details" itemprop="description">Public Services Assistant &bull; Jul, 2007 &mdash; Mar, 2008</h4>
           <p class="resume-item-copy">Assisted the librarians with assigning library cards, taking fees, and shelving books. Put out materials for upcoming events and catalogued books.</p>
 
-        </div><!-- end of resume-item -->
+        </div>
+        <!-- end of resume-item -->
 
       </section>
       <!-- end Experience -->
-      {% endif %}
-
-      {% if site.resume_section_education %}
+      {% endif %} {% if site.resume_section_education %}
       <!-- begin Education -->
       <section class="content-section">
 
@@ -89,7 +88,7 @@
         <div class="resume-item" itemscope itemprop="alumniOf" itemtype="https://schema.org/CollegeOrUniversity">
           <h3 class="resume-item-title" itemprop="name">University of Pittsburgh</h3>
           <h4 class="resume-item-details" itemprop="description">BSc., Computer Science &bull; 2015 &mdash; 2018, expected</h4>
-          <p class="resume-item-copy">WiCS (Women in Computer Science member)</p>
+          <p class="resume-item-copy">WiCS (Women in Computer Science) and Pitt Computer Science Club member</p>
         </div>
 
         <div class="resume-item" itemscope itemprop="alumniOf" itemtype="https://schema.org/CollegeOrUniversity">
@@ -99,16 +98,14 @@
         </div>
 
         <div class="resume-item" itemscope itemprop="alumniOf" itemtype="https://schema.org/CollegeOrUniversity">
-        <h3 class="resume-item-title" itemprop="name">Harrisburg Area Community College</h3>
-        <h4 class="resume-item-details" itemprop="description">Humanities &bull; 2008 &mdash; 2012</h4>
-        <p class="resume-item-copy">Transfer Student</p>
-      </div>
+          <h3 class="resume-item-title" itemprop="name">Harrisburg Area Community College</h3>
+          <h4 class="resume-item-details" itemprop="description">Humanities &bull; 2008 &mdash; 2012</h4>
+          <p class="resume-item-copy">Transfer Student</p>
+        </div>
 
       </section>
       <!-- end Education -->
-      {% endif %}
-
-      {% if site.resume_section_projects %}
+      {% endif %} {% if site.resume_section_projects %}
       <!-- begin Projects -->
       <section class="content-section">
 
@@ -136,9 +133,7 @@
 
       </section>
       <!-- end Projects -->
-      {% endif %}
-
-      {% if site.resume_section_skills %}
+      {% endif %} {% if site.resume_section_skills %}
       <!-- begin Skills -->
       <section class="content-section">
 
@@ -157,8 +152,8 @@
         </div>
 
         <div class="resume-item">
-          <h4 class="resume-item-details">Independence</h4>
-          <p class="resume-item-copy">While I ask for help any time I need it, I am also self-motivated.</p>
+          <h4 class="resume-item-details">CSS/SASS</h4>
+          <p class="resume-item-copy">Basic front-end skills.</p>
         </div>
 
         <div class="resume-item">
@@ -168,9 +163,7 @@
 
       </section>
       <!-- end Skills -->
-      {% endif %}
-
-      {% if site.resume_section_recognition %}
+      {% endif %} {% if site.resume_section_recognition %}
       <!-- begin Recognition -->
       <section class="content-section">
 
@@ -181,7 +174,8 @@
         <div class="resume-item">
           <h3 class="resume-item-title" itemprop="award">CCAC Ambassadorship Finalist</h3>
           <h4 class="resume-item-details">Ambassador Invitee &bull; 2014</h4>
-          <p class="resume-item-copy">Was a finalist for the Community College of Allegheny County's Ambassador program. Only a select number of students are asked to join after being interviewed. I was invited to join but since I was transferring the next semester, I was unable to participate as I needed to give them a full year of my time. Must have a 3.0 GPA or higher to join.</p>
+          <p class="resume-item-copy">Was a finalist for the Community College of Allegheny County's Ambassador program. Only a select number of students are asked to join after being interviewed. I was invited to join but since I was transferring the next semester, I was unable
+            to participate as I needed to give them a full year of my time. Must have a 3.0 GPA or higher to join.</p>
         </div>
 
         <div class="resume-item">
@@ -192,9 +186,7 @@
 
       </section>
       <!-- end Recognition -->
-      {% endif %}
-
-      {% if site.resume_section_associations %}
+      {% endif %} {% if site.resume_section_associations %}
       <!-- begin Associations -->
       <section class="content-section">
 
@@ -205,7 +197,8 @@
         <div class="resume-item">
           <h3 class="resume-item-title">LOCAL Outreach Volunteer</h3>
           <h4 class="resume-item-details">Volunteer, Carnegie Library of Pittsburgh &bull; August 2014 &mdash; December 2014</h4>
-          <p class="resume-item-copy">We were broken up into teams/neighborhoods serving underprivileged families in the Pittsburgh area. We do anything from getting people signed up for the Pittsburgh Comic-Con to handing out books at bus stops in the Hill District, a poverty-stricken, crime ridden area. It was a five-hour a month commitment. I was part of the East LOCAL Team.</p>
+          <p class="resume-item-copy">We were broken up into teams/neighborhoods serving underprivileged families in the Pittsburgh area. We do anything from getting people signed up for the Pittsburgh Comic-Con to handing out books at bus stops in the Hill District, a poverty-stricken,
+            crime ridden area. It was a five-hour a month commitment. I was part of the East LOCAL Team.</p>
         </div>
 
         <div class="resume-item">
@@ -222,9 +215,7 @@
 
       </section>
       <!-- end Associations -->
-      {% endif %}
-
-      {% if site.resume_section_links %}
+      {% endif %} {% if site.resume_section_links %}
       <!-- begin Links -->
       <section class="content-section">
 
